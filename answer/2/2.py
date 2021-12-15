@@ -1,4 +1,4 @@
-# 运行前，你不仅需要安装pypi包`qrcode`，还需要安装`pillow`
+info="我的个人信息"
 import qrcode
 import os
 from math import sin,cos,pi
@@ -8,7 +8,7 @@ print("3、自动关机小程序  3、师生举行募捐活动")
 a=int(input("请输入你的选择（按0退出)："))
 while a!=0:
     if a==1:
-        img=qrcode.make("个人信息")
+        img=qrcode.make(info)
         img.save("个人信息.png")
         print("个人信息二维码已生成")
     elif a==2:
